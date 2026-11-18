@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>City Letter Counter</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <main>
+    <h1>City Letter Counter</h1>
+    <p class="hint">Enter a letter to see how many of the 50 largest cities start with it.</p>
+
+    <label for="letter">Letter</label>
+    <input id="letter" type="text" maxlength="1" autocomplete="off" autofocus placeholder="e.g. c" />
+
+    <p id="status" class="status" hidden>Loading…</p>
+    <p id="error" class="error" hidden></p>
+
+    <section id="result" class="result" hidden>
+      <p>
+        Cities starting with “<strong id="result-letter"></strong>”:
+        <span id="result-count" class="count"></span>
+      </p>
+      <ul id="result-cities"></ul>
+    </section>
+  </main>
+</body>
+</html>

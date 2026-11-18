@@ -1,0 +1,41 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+
+body {
+  margin: 0;
+  padding: 48px 16px;
+}
+
+main {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+h1 { margin: 0 0 4px; font-size: 1.5rem; }
+
+.hint { margin: 0 0 24px; color: GrayText; }
+
+label { display: block; margin-bottom: 6px; font-weight: 600; }
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  font-size: 1.25rem;
+  border: 1px solid GrayText;
+  border-radius: 8px;
+}
+
+input:focus { outline: 2px solid #3b82f6; outline-offset: 1px; border-color: transparent; }
+
+.status { color: GrayText; }
+.error { color: #dc2626; }
+
+.result { margin-top: 24px; }
+.count { font-size: 1.5rem; font-weight: 700; margin-left: 4px; }
+
+ul { padding-left: 20px; }
+li { padding: 2px 0; }
